@@ -40,11 +40,11 @@ public class choiceGui extends JFrame{
 		levels.addItem("3");
 		levels.addItem("4");
 		levels.addItem("5");
-		levels.setPreferredSize(new Dimension(110,30));
+		levels.setPreferredSize(new Dimension(90,30));
 		JComboBox<String> algorithms = new JComboBox<>();
 		algorithms.addItem("MinMax");
 		algorithms.addItem("alphaBeta");
-		algorithms.setPreferredSize(new Dimension(110,30));
+		algorithms.setPreferredSize(new Dimension(90,30));
 		
 		JLabel background =null ;
 		setLayout(new BorderLayout());
@@ -56,7 +56,7 @@ public class choiceGui extends JFrame{
 	    }
 		
 		add(background);
-		background.setLayout(new FlowLayout(FlowLayout.LEFT,250,29));
+		background.setLayout(new FlowLayout(FlowLayout.LEFT,300,29));
 		background.add(levels);
 		background.add(algorithms);
 		//playButton.setAlignmentX(CENTER_ALIGNMENT);

@@ -86,6 +86,7 @@ public class WindowGame extends JFrame {
         panel = createPanel();
         setWindowProperties();
         loadImages();
+        this.setDefaultCloseOperation(3);
     }
 
     /**
@@ -315,18 +316,18 @@ public class WindowGame extends JFrame {
            }
 
         }
-    	/*@Override
-        public void mousePressed(MouseEvent e) {
-            super.mouseClicked(e);
-
-            if (board.isGameOver()) {
-                board.reset();
-                panel.repaint();
-            } else {
-                playMove(e,algo);
-            }
-
-        }*/
+//    	@Override
+//        public void mousePressed(MouseEvent e) {
+//            super.mouseClicked(e);
+//
+//            if (board.isGameOver()) {
+//                board.reset();
+//                panel.repaint();
+//            } else {
+//                playMove(e,algo);
+//            }
+//
+//        }
 
         /**
          * Plays the move that the user clicks, if the move is valid.
